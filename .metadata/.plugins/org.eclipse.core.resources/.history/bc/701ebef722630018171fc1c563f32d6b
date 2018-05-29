@@ -1,0 +1,4 @@
+package com.bridgeit.constructorWithDependentObject;
+
+public class TyrePojo {
+}
