@@ -4,7 +4,7 @@ public class Employee {
 private int id;
 private String name;
 private float Salary;
-AddressPojo address;
+private AddressPojo address;
 public int getId() {
 	return id;
 }

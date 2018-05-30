@@ -1,33 +1,49 @@
 package com.bridgeit.springPractice;
 
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
 public class StudentPojo {
-private int id;
-private String name;
-private String city;
-public int getId() {
-	return id;
-}
-public void setId(int id) {
-	this.id = id;
-}
-public String getName() {
-	return name;
-}
-public void setName(String name) {
-	this.name = name;
-}
-public String getCity() {
-	return city;
-}
-public void setCity(String city) {
-	this.city = city;
+
+private List list;
+private Set set;
+private Map map;
+
+
+
+public void setList(List list) {
+	this.list = list;
 }
 
-public StudentPojo() {
-	super();
+
+
+public Set getSet() {
+	return set;
 }
-public void display()
-{
-	System.out.println(id+ "\t" +name+ "\t" +city);
+
+
+
+public void setSet(Set set) {
+	this.set = set;
 }
+
+
+
+public Map getMap() {
+	return map;
+}
+
+
+
+public void setMap(Map map) {
+	this.map = map;
+}
+
+
+@Override
+public String toString() {
+	return "StudentPojo [list=" + list + ", set=" + set + ", map=" + map + "]";
+} 
+
 }

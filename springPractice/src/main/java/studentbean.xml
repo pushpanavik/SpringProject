@@ -6,14 +6,39 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans  
                 http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
   
-<bean id="studentbean" class="com.bridgeit.springPractice.StudentPojo">  
-<property name="id">
-<value>101</value></property>
-<property name="name">
-<value>priya</value>
+<bean id="studentbean" class="com.bridgeit.springPractice.StudentPojo" scope="prototype">  
+
+<property name="list">
+<list>
+<value> 101</value>
+<value>102</value>
+<value>103</value>
+<value type="int"> 1001</value>
+<value type="int">1002</value>
+<value type="int">1003</value>
+</list>
 </property>
-<property name="city">
-<value>Mumbai</value></property>
+
+<property name="set">
+<set>
+<value>manoj</value>
+<value>ajay</value>
+<value>jignesh</value>
+</set>
+</property>
+
+<property name="map">
+<map>
+<entry key="1" value="Pune">
+</entry>
+<entry key="2" value="Mumbai"></entry>
+<entry key="3" value="Delhi"></entry>
+</map></property>
+
+
+
+
+
 </bean>  
-  
+
 </beans> 

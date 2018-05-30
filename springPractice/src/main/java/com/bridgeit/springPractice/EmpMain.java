@@ -13,16 +13,24 @@ public class EmpMain {
 	{
 		/*using Constructor injection*/
 		
-		ApplicationContext applicationContext=new ClassPathXmlApplicationContext("beans.xml");
+		/*ApplicationContext applicationContext=new ClassPathXmlApplicationContext("beans.xml");
 		e=(Employee) applicationContext.getBean("emp");
-		
+		*/
 		
 		Resource resource=new ClassPathResource("beans.xml");
-		BeanFactory beanFactory=new XmlBeanFactory(resource);
-		e=(Employee) beanFactory.getBean("emp");
-		e.show();
+		System.out.println(1);
 		
-		//Using Setter
+		BeanFactory beanFactory=new XmlBeanFactory(resource);
+		System.out.println(2);
+		
+		//getBean method will return the instance of bean
+		e=(Employee) beanFactory.getBean("emp");
+		
+		System.out.println(3);
+		e.show();
+		System.out.println(4);
+		
+		
 		
 		
 	}
