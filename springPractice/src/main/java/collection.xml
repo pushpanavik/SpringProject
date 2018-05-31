@@ -14,7 +14,7 @@
 <value>BlackForest</value>  
 </list>
 </constructor-arg>
-<constructor-arg name="">
+<constructor-arg name="set">
 <set>
 <value>fbmdgnmdf</value>
 <value>fhgjfdhgiurt</value>
