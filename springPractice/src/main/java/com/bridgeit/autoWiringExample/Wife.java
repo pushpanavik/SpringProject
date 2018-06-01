@@ -3,7 +3,7 @@ package com.bridgeit.autoWiringExample;
 class Wife{
 	private String Name;
 	private int age;
-	private Husband husbandDetails;
+	
 	public String getName() {
 		return Name;
 	}
@@ -16,20 +16,19 @@ class Wife{
 	public void setAge(int age) {
 		this.age = age;
 	}
-	public Husband getHusbandDetails() {
-		return husbandDetails;
+	
+	
+	public Wife() {
+		super();
 	}
-	public void setHusbandDetails(Husband husbandDetails) {
-		this.husbandDetails = husbandDetails;
-	}
-	public Wife(String name, int age, Husband husbandDetails) {
-		Name = name;
+	public Wife(String name, int age) {
+		this.Name = name;
 		this.age = age;
-		this.husbandDetails = husbandDetails;
+		
 	}
 	@Override
 	public String toString() {
-		return "Wife [Name=" + Name + ", age=" + age + ", husbandDetails=" + husbandDetails + "]";
+		return "Wife [Name=" + Name + ", age=" + age +  "]";
 	}
 	
 	

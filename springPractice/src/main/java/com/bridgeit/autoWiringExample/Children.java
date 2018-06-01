@@ -3,8 +3,8 @@ package com.bridgeit.autoWiringExample;
 public class Children {
 	private String name;
 	private int age;
+	private Mother father1;
 	private FatherDetails fatherDetails;
-	private Mother motherDetails;
 	public String getName() {
 		return name;
 	}
@@ -17,29 +17,31 @@ public class Children {
 	public void setAge(int age) {
 		this.age = age;
 	}
+	public Mother getFather() {
+		return father1;
+	}
+	public void setFather(Mother father) {
+		this.father1 = father;
+	}
 	public FatherDetails getFatherDetails() {
 		return fatherDetails;
 	}
 	public void setFatherDetails(FatherDetails fatherDetails) {
 		this.fatherDetails = fatherDetails;
 	}
-	public Mother getMotherDetails() {
-		return motherDetails;
-	}
-	public void setMotherDetails(Mother motherDetails) {
-		this.motherDetails = motherDetails;
-	}
-	
-	public Children(String name, int age, FatherDetails fatherDetails, Mother motherDetails) {
-		
+	public Children(String name, int age, Mother father, FatherDetails fatherDetails) {
+		super();
 		this.name = name;
 		this.age = age;
+		this.father1 = father;
 		this.fatherDetails = fatherDetails;
-		this.motherDetails = motherDetails;
 	}
 	@Override
 	public String toString() {
-		return "Childrens [name=" + name + ", age=" + age + ", Father Details=" + fatherDetails + ", Mother Details="
-				+ motherDetails + "]";
+		return "Children [name=" + name + ", age=" + age + ", father=" + father1 + ", fatherDetails=" + fatherDetails
+				+ "]";
 	}
+	
+	
+	
 }

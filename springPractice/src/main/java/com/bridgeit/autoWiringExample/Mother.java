@@ -1,9 +1,9 @@
 package com.bridgeit.autoWiringExample;
 
-
 public class Mother {
 	private String Name;
 	private int age;
+	
 	private FatherDetails father;
 	public String getName() {
 		return Name;
@@ -29,9 +29,10 @@ public class Mother {
 		this.age = age;
 		this.father = fatherDetails;
 	}
+	
 	@Override
 	public String toString() {
-		return "Mother [Name=" + Name + ", age=" + age + ", fatherDetails=" + father + "]";
+		return "Mother [Name=" + Name + ", age=" + age + ", Father Details=" + father + "]";
 	}
 	
 	
