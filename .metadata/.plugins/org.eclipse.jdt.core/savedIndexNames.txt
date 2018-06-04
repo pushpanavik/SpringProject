@@ -1,7 +1,0 @@
-INDEX VERSION 1.130+/home/bridgeit/Documents/SpringProject/.metadata/.plugins/org.eclipse.jdt.core
-1601356557.index
-3491295991.index
-3233792132.index
-298780037.index
-3293561388.index
-1615294974.index
